@@ -1,0 +1,28 @@
+#! /usr/bin/env python3
+
+# display welcome message
+print("The Test Scores Program\n")
+print("Enter 'exit' to stop entering scores")
+print("=" * 25)
+
+# get scores from the user
+total_score = 0
+counter = 0
+
+while True:
+      score = input("Enter Test score: ")
+      if score == "exit":
+            break
+      counter += 1
+      total_score += int(score)
+
+# calculate the average
+
+average_score = round (total_score / counter)
+
+# format and display the results
+print ("=" * 25)
+print("Total Score: ", total_score,
+      "\nAverage Score: ", average_score)
+# end the program
+print("\nBye")
